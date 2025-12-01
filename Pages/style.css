@@ -1,0 +1,106 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+#topbar {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 50vw;
+    max-width: 20rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+li{
+    font-weight: bold;
+    list-style: none;
+    font-size: 1rem;
+    margin: 0.3rem;
+}
+
+li:hover{
+    color: rgb(255, 98, 0);
+    transition-duration: 0.3s;
+    text-shadow: 0 0 1rem white;
+    user-select: none;
+}
+
+#sfondoanimato {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -1;
+}
+
+#boxinfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 10px solid red;
+    width: 70vw;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+.name{
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.info{
+    display: block;
+    margin-top: 0.39rem;
+    font-weight: bold;
+    color: #ff00fb;
+    clear: right;
+}
+
+.logo1{
+    display: block;
+    margin-top: 3.3rem;
+    margin-left: 1.2rem;
+    width: 20%;
+}
+
+a{
+    text-decoration: none;
+}
+#col1{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid yellow;
+    text-align: center;;
+}
+#col2{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px solid pink;
+}
+
+.glass{
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.glass2{
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(3px) saturate(190%);
+    -webkit-backdrop-filter: blur(3px) saturate(190%);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
+}
