@@ -18,52 +18,49 @@
         }
         function Home(){
             Hide('projects');
-            Hide('carriera');
             Flex('boxinfo');
         }
         function Projects(){
             Hide('boxinfo');
-            Hide('carriera');
             Flex('projects')
         }
         function Projects2(){
             Hide('projects')
             Hide('boxinfo');
-            Flex('carriera');
         }
     </script>
-
 </head>
 <body>
 
-    <video autoplay muted loop playsinline id="sfondoanimato">
-        <source src="../Assets/space.mp4" type="video/mp4">
-        Your browser does not support the video.
-    </video>
+<video autoplay muted loop playsinline id="sfondoanimato">
+    <source src="../Assets/space.mp4" type="video/mp4">
+    Your browser does not support the video.
+    If you are on safari, turn off power saving mode to autoplay the background.
+</video>
 
-    <div id="topbar">
-        <ul id="topbar_list" class="glass">
-            <li onclick="Home()">HOME</a></li>
-            <li onclick="Projects()">PROJECTS</li>
-            <li onclick="Projects2()">CAREER</li>
-        </ul>
-    </div>
+<div id="topbar">
+    <ul id="topbar_list" class="glass">
+        <li onclick="Home()">HOME</a></li>
+        <li onclick="Projects()">PROJECTS</li>
+        <li onclick="Projects2()">CAREER</li>
+    </ul>
+</div>
 
-    <div id="boxinfo" class="glass2">
-        <div id="col1">
-            <span class="name">Alessio Leo</span>
-            <span class="info" style="user-select: none;">Bachelor's Degree in Computer Enginnering</span>
-            <span class="info" style="user-select: none;">Master's Degree Student</span>
-            <span class="info" style="user-select: none;">Salerno, Italy</span>
-            <span class="info" style="user-select: none;">born: 19 December 2003 </span>
-            <a href="mailto:a.leo88@studenti.unisa.it"><span class="info" style="user-select: none;">a.leo88@studenti.unisa.it</span></a>
-            <a href="mailto:alessio003@icloud.com"><span class="info" style="user-select: none;">alessio003@icloud.com</span></a>
-        </div>
-        <div id="col2">
-            <a href="https://www.linkedin.com/in/alessio-leo-635aa8359/"><img src="../Assets/LinkedIn_logo.svg" class="logo1"></a>
-            <a href="https://github.com"><img src="../Assets/GitHub_Lockup_Light.png" class="logo1"></a>
-        </div>
+<div id="boxinfo" class="glass2">
+    <div id="col1">
+        <span class="name">Alessio Leo</span>
+        <span class="info" style="user-select: none;">Bachelor's Degree in Computer Enginnering</span>
+        <span class="info" style="user-select: none;">Master's Degree Student</span>
+        <span class="info" style="user-select: none;">Salerno, Italy</span>
+        <span class="info" style="user-select: none;">born: 19 December 2003 </span>
+        <a href="mailto:a.leo88@studenti.unisa.it"><span class="info" style="user-select: none;">a.leo88@studenti.unisa.it</span></a>
+        <a href="mailto:alessio003@icloud.com"><span class="info" style="user-select: none;">alessio003@icloud.com</span></a>
     </div>
+    <div id="col2">
+        <a href="https://www.linkedin.com/in/alessio-leo-635aa8359/"><img src="../Assets/LinkedIn_logo.svg" class="logo1"></a>
+        <a href="https://github.com"><img src="../Assets/GitHub_Lockup_Light.png" class="logo1"></a>
+    </div>
+</div>
 
 <div id="projects">
     <div id="Ai" class="contenitore">
