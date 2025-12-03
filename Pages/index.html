@@ -4,43 +4,72 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title>Alessio Leo</title>
+
+    <script>
+        function Flex(id){
+            let box = document.getElementById(id);
+            box.classList.remove('none');
+            box.classList.add('flex');
+        }
+        function Hide(id){
+            let box = document.getElementById(id);
+            box.classList.remove('flex');
+            box.classList.add('hidden');
+        }
+        function Home(){
+            Hide('projects');
+            Hide('carriera');
+            Flex('boxinfo');
+        }
+        function Projects(){
+            Hide('boxinfo');
+            Hide('carriera');
+            Flex('projects')
+        }
+        function Projects2(){
+            Hide('projects')
+            Hide('boxinfo');
+            Flex('carriera');
+        }
+    </script>
+
 </head>
 <body>
 
-    <video autoplay muted loop id="sfondoanimato">
-        <source src="space.mp4" type="video/mp4">
+    <video autoplay muted loop playsinline id="sfondoanimato">
+        <source src="../Assets/space.mp4" type="video/mp4">
         Your browser does not support the video.
     </video>
 
     <div id="topbar">
         <ul id="topbar_list" class="glass">
-            <li><a href="index.html" class="btntop">HOME</a></li>
-            <li>PROJECTS</li>
-            <li>CAREER</li>
+            <li onclick="Home()">HOME</a></li>
+            <li onclick="Projects()">PROJECTS</li>
+            <li onclick="Projects2()">CAREER</li>
         </ul>
     </div>
 
-<div id="boxinfo" class="glass2">
-    <div id="col1">
-        <span class="name">Alessio Leo</span>
-        <span class="info" style="user-select: none;">Bachelor's Degree in Computer Enginnering</span>
-        <span class="info" style="user-select: none;">Master's Degree Student</span>
-        <span class="info" style="user-select: none;">Salerno, Italy</span>
-        <span class="info" style="user-select: none;">born: 19 December 2003 </span>
-        <a href="mailto:a.leo88@studenti.unisa.it"><span class="info" style="user-select: none;">a.leo88@studenti.unisa.it</span></a>
-        <a href="mailto:alessio003@icloud.com"><span class="info" style="user-select: none;">alessio003@icloud.com</span></a>
+    <div id="boxinfo" class="glass2">
+        <div id="col1">
+            <span class="name">Alessio Leo</span>
+            <span class="info" style="user-select: none;">Bachelor's Degree in Computer Enginnering</span>
+            <span class="info" style="user-select: none;">Master's Degree Student</span>
+            <span class="info" style="user-select: none;">Salerno, Italy</span>
+            <span class="info" style="user-select: none;">born: 19 December 2003 </span>
+            <a href="mailto:a.leo88@studenti.unisa.it"><span class="info" style="user-select: none;">a.leo88@studenti.unisa.it</span></a>
+            <a href="mailto:alessio003@icloud.com"><span class="info" style="user-select: none;">alessio003@icloud.com</span></a>
+        </div>
+        <div id="col2">
+            <a href="https://www.linkedin.com/in/alessio-leo-635aa8359/"><img src="../Assets/LinkedIn_logo.svg" class="logo1"></a>
+            <a href="https://github.com"><img src="../Assets/GitHub_Lockup_Light.png" class="logo1"></a>
+        </div>
     </div>
-    <div id="col2">
-        <a href="https://www.linkedin.com/in/alessio-leo-635aa8359/"><img src="LinkedIn_logo.svg" class="logo1"></a>
-        <a href="https://github.com"><img src="GitHub_Lockup_Light.png" class="logo1"></a>
-    </div>
-</div>
 
 <div id="projects">
     <div id="Ai" class="contenitore">
         <div style="padding: 1rem">
             <span style="font-weight: bold">Agente Ai - Pilota Automatico</span>
-            <img src="Ai.png" class="copertina_prog" >
+            <img src="../Assets/Ai.png" class="copertina_prog" >
             <p>
                 Durante il corso nella laurea triennale come parte dell'esame in gruppi da 4 ci è stato assegnato il compito di sviluppare un algoritmo in grado di guidare autonomamente una macchina in ambiente simulato tenendo conto di una serie di sensori come posizione in pista e distanza dai bordi per simulare un lidar.
                 Il progetto si è svolto in java e python usufruendo della libreria scikit-learn con un classificatore k-nn
@@ -52,7 +81,7 @@
 
         <div style="padding: 1rem">
             <span style="font-weight: bold">Outer Space</span>
-            <img src="OuterSpace.png" class="copertina_prog">
+            <img src="../Assets/OuterSpace.png" class="copertina_prog">
             <p>
                 Come lavoro finale per il corso “Tecnologie Web” della triennale ci è stata data massima libertà a gruppi di 4 per lo sviluppo di un sito web multipagina con il vincolo di dover utilizzare tutte le tecnologie studiate (html, css, javascript, php, postgress). Il sito è stato strutturato in modo da avere per ogni pagina il file html, css, javascript e php per avere una maggior organizzazione. Sono state usate le seguenti tecnologie oltre quelle precedentemente elencate, html5 come per la geolocalizzazione, stripe e varie api per la raccolta di informazioni automatiche. Il nostro sito chiamato outer space è un eshop completo e funzionante di ipotetici viaggi spaziali. Presenta tutte le caratteristiche funzionali e di sicurezza di un e-commerce moderno strutturato dalle seguenti pagine:
                 Homepage - composta da versioni diverse per utente loggato e non
@@ -76,7 +105,7 @@
     <div id="Swe" class="contenitore">
         <div style="padding: 1rem">
             <span style="font-weight: bold">Rubrica Telefonica</span>
-            <img src="Rubrica.png" class="copertina_prog">
+            <img src="../Assets/Rubrica.png" class="copertina_prog">
             <p>
                 Alla fine del corso di Software Engineering come parte valutativa ci è stato chiesto di applicare le conoscenze studiate realizzando un software di rubrica telefonica in java a gruppi di 4. Ci è stato assegnato un documento grezzo da cui estrarre tutte le specifiche necessarie facendo un analisi dei requisiti con una successiva assegnazione delle priorità mettendo in pratica i concetti teorici studiati. Successivamente abbiamo fatto una fase di progettazione composta dai vari diagrammi di classe, sequenza, casi d’uso e package. In seguito poi si è passati sulla parte implementativa in java e javafx con scenebuilder (in questo modo abbiamo applicato in contemporanea le conoscenze del corso di programmazione ad oggetti), in questa fase abbiamo utilizzato anche doxygen per la generazione automatica di documentazione. Per continuare il ciclo di vita di un software abbiamo eseguito una fase di testing con unit test e Junit per garantire il corretto funzionamento del software e scoprire eventuali malfunzionamenti. In fine il software è stato rilasciato come file jar nella sua versione finale e redatta una relazione per descrivere la metodologia applicata. In tutto il processo produttivo si è usufruito di git e in particolare di github per il version control rendendo questo progetto seppur a prima vista “semplice”, ma in realtà di modesta complessità, un progetto completo in grado di aver applicato tutte le conoscenze acquisite durante le lezioni. Tra le funzionalità della rubrica su mia proposta e realizzazione è stato deciso di implementare il supporto completo allo standard VCF per rendere il software interfacciabile con la maggior parte delle rubriche digitali in commercio.
                 Il progetto si è concluso con votazione 27/30.
@@ -86,7 +115,7 @@
     <div id="Mp" class="contenitore">
         <div style="padding: 1rem">
             <span style="font-weight: bold">BiblioTech</span>
-            <img src="BiblioTech.png" class="copertina_prog">
+            <img src="../Assets/BiblioTech.png" class="copertina_prog">
             <p>
                 Come requisito d’esame per il corso della triennale chiamato “mobile programming" ci è stata la realizzazione in gruppi di 4 di un'app di libreria per smartphone e multi-os.
                 L’applicazione è stata sviluppata in flutter con l’utilizzo di sqlite per la persistenza della libreria e dei dati di lettura e l’utilizzo di xcode per avere una simulazione sia su dispositivi fisici che virtuali.
@@ -98,7 +127,7 @@
     <div id="Nms" class="contenitore">
         <div style="padding: 1rem">
             <span style="font-weight: bold">Configurazione office Network</span>
-            <img src="Nms.png" class="copertina_prog">
+            <img src="../Assets/Nms.png" class="copertina_prog">
             <p>
                 Per l’esame della triennale “Network Management and Security” in gruppi di 4 ci è stato dato il compito di gestire la configurazione di rete in figura configurando da zero ogni singolo componente dai firewall dei router ai vari server presenti in rete, gestendo come richiesto dalle specifiche i vari accessi. Si è usufruito del software di simulazione GNS3 leader nel settore delle simulazioni di rete.
                 In particolare la struttura della rete era cosi caratterizzata:
@@ -130,14 +159,13 @@
     <div id="Minervas" class="contenitore">
         <div style="padding: 1rem">
             <span style="font-weight: bold">Algoritmo di Controllo della Congestione realizzato con Machine Learning</span>
-            <img src="Minervas.png" class="copertina_prog">
+            <img src="../Assets/Minervas.png" class="copertina_prog">
             <p>
                 Durante il tirocinio curriculare della triennale ho svolto 200 ore presso minervas (startup attiva nel settore della mobilità ecosostenibile ed intelligente) su un progetto nell'ambito v2x, ho avuto modo di realizzare in ambiente simulato un algoritmo di controllo della congestione di comunicazione tra due macchine virtuali linux e vpn. L’algoritmo sfrutta un classificatore K-nn basato su un modello di machine learning addestrato su dataset provenienti da misurazioni della rete sotto vari carichi. L’algoritmo in base alla classificazione della rete adatta automaticamente la frequenza di trasmissione di messaggi periodici alla base di scenari reali di v2x. Tale algoritmo ha dimostrato un ottimo incremento delle performance in caso di rete dinamica o congestionata adattandosi sempre con la massima frequenza di trasmissione possibile in quello scenario, inoltre l’algoritmo è stato anche argomento della tesi triennale.
                 Successivamente nelle ore di tirocinio restanti ho iniziato a configurare una simulazione di traffico urbano con il simulatore veins creando autonomamente lo scenario urbano da una mappa di openstreetmap e  usufruendo di sumo e omnet++ per la simulazione rispettivamente del traffico e della rete veicolare. Tale simulazione è stata configurata negli scenari di traffico basso e denso ma non è stata integrata con l’algoritmo di controllo precedentemente descritto per limiti di tempo.
             </p>
         </div>
     </div>
-
 </div>
 
 </body>
