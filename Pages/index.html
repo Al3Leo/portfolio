@@ -16,17 +16,25 @@
             box.classList.remove('flex');
             box.classList.add('hidden');
         }
+        function Block(id){
+            let box = document.getElementById(id);
+            box.classList.remove('hidden');
+            box.classList.add('block');
+        }
         function Home(){
             Hide('projects');
+            Hide('timeline');
             Flex('boxinfo');
         }
         function Projects(){
             Hide('boxinfo');
-            Flex('projects')
+            Hide('timeline');
+            Flex('projects');
         }
-        function Projects2(){
-            Hide('projects')
+        function Carreer(){
+            Hide('projects');
             Hide('boxinfo');
+            Block('timeline');
         }
     </script>
 </head>
@@ -42,7 +50,7 @@
     <ul id="topbar_list" class="glass">
         <li onclick="Home()">HOME</a></li>
         <li onclick="Projects()">PROJECTS</li>
-        <li onclick="Projects2()">CAREER</li>
+        <li onclick="Carreer()">CAREER</li>
     </ul>
 </div>
 
@@ -161,6 +169,39 @@
                 Durante il tirocinio curriculare della triennale ho svolto 200 ore presso minervas (startup attiva nel settore della mobilità ecosostenibile ed intelligente) su un progetto nell'ambito v2x, ho avuto modo di realizzare in ambiente simulato un algoritmo di controllo della congestione di comunicazione tra due macchine virtuali linux e vpn. L’algoritmo sfrutta un classificatore K-nn basato su un modello di machine learning addestrato su dataset provenienti da misurazioni della rete sotto vari carichi. L’algoritmo in base alla classificazione della rete adatta automaticamente la frequenza di trasmissione di messaggi periodici alla base di scenari reali di v2x. Tale algoritmo ha dimostrato un ottimo incremento delle performance in caso di rete dinamica o congestionata adattandosi sempre con la massima frequenza di trasmissione possibile in quello scenario, inoltre l’algoritmo è stato anche argomento della tesi triennale.
                 Successivamente nelle ore di tirocinio restanti ho iniziato a configurare una simulazione di traffico urbano con il simulatore veins creando autonomamente lo scenario urbano da una mappa di openstreetmap e  usufruendo di sumo e omnet++ per la simulazione rispettivamente del traffico e della rete veicolare. Tale simulazione è stata configurata negli scenari di traffico basso e denso ma non è stata integrata con l’algoritmo di controllo precedentemente descritto per limiti di tempo.
             </p>
+        </div>
+    </div>
+</div>
+
+<div class="timeline" style="color: white; text-shadow: black; font-weight: bold;">
+    <div class="container left">
+        <div class="content glass">
+            <h2 class="anno">2003</h2>
+            <p>Nato il 19 December 2003</p>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="content glass">
+            <h2 class="anno">2017</h2>
+            <p>Liceo Scientifico - Scienze Applicate<br><br>Liceo Scientifico Bonaventura Rescigno a.s. 2017-2022 </p>
+        </div>
+    </div>
+    <div class="container left">
+        <div class="content glass">
+            <h2 class="anno">2022</h2>
+            <p>Ingegneria Informatica<br>Università degli Studi di Salerno<br>Curriculum Software composto da Tecnologie Web e Mobile Programming <br> Esami a scelta: Ai e Network Management and Security</p>
+        </div>
+    </div>
+    <div class="container right ">
+        <div class="content glass">
+            <h2 class="anno">2025</h2>
+            <p>Ingeneria Informatica Magistrale<br>Curriculum Artificial Intelligence and Intelligent Robotics</p>
+        </div>
+    </div>
+    <div class="container left">
+        <div class="content glass">
+            <h2 class="anno">Working in Progress</h2>
+            <p>Sto lavorando per preparare il prossimo blocco di esperienza...<br>torna tra qualche mese :)</p>
         </div>
     </div>
 </div>
