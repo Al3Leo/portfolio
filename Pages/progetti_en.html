@@ -1,0 +1,77 @@
+<div id="projects">
+    <div id="Ai" class="contenitore">
+        <div style="padding: 1rem">
+            <span style="font-weight: bold; color: #ff00ae">AI Agent – Autonomous Driving</span>
+            <img src="../Assets/Ai.png" class="copertina_prog">
+            <p>
+                During a Bachelor’s degree course, as part of the final assessment, a group project was carried out with the goal of developing an algorithm capable of autonomously driving a vehicle in a simulated environment. The objective was to design a control system able to make real-time decisions based on data coming from virtual sensors, such as track position and distance from the edges, used to simulate the behavior of a LIDAR sensor.
+                The project was developed using Java and Python, leveraging the scikit-learn library and, in particular, a k-nearest neighbors classifier. During the design phase, I explored feature selection techniques and dataset balancing strategies, which are fundamental to ensure robust performance both in standard driving conditions and in critical scenarios such as off-track events, spins, or complex S-shaped curves. To address data imbalance, I independently proposed and implemented a control mechanism capable of deciding whether or not to record samples in the dataset, thus avoiding the accumulation of large amounts of data related to straight sections at the expense of rarer but critical situations. This solution proved to be particularly effective and more straightforward compared to alternative, more complex approaches.
+                An additional technique adopted for dataset construction involved using an external machine as the simulator server, separated from the system running the autonomous driving script. This made it possible to train and test the algorithm under non-ideal conditions, introducing realistic communication latencies similar to those present during the exam, where the simulator and controller were executed on different machines connected via a network. The project concluded with excellent competition results, successfully completing all three required laps with highly competitive times. The final project evaluation was 28/30.
+            </p>
+        </div>
+    </div>
+
+    <div id="Tw" class="contenitore">
+        <div style="padding: 1rem">
+            <span style="font-weight: bold; color: #ffff00">Outer Space</span>
+            <img src="../Assets/OuterSpace.png" class="copertina_prog">
+            <p>
+                As the final project of the Bachelor’s degree course in Web Technologies, a group multipage website was developed with full design freedom and the requirement to use all technologies covered during the course: HTML, CSS, JavaScript, PHP, and PostgreSQL. The project followed an organized and modular structure, with separate files for HTML, CSS, JavaScript, and PHP for each page, improving readability, maintainability, and code organization. In addition to the required technologies, advanced features were integrated, including HTML5 geolocation, Stripe integration for payment simulation, and several external APIs for automatic data acquisition.
+                The website, named Outer Space, is a complete and fully functional e-commerce platform dedicated to hypothetical space travel, designed to replicate the behavior and features of a modern e-commerce system. It includes a differentiated homepage for authenticated and non-authenticated users, a product catalog with dynamic cart updates via AJAX, a support system based on forms and APIs for email contact, an authentication system developed in PHP with a popup-based frontend interface and access limitations based on the user’s geographic location, and a client-side cart managed through cookies with asynchronous updates to enhance user experience. The purchasing process is completed through a checkout page that simulates payments via Stripe, making the buying flow realistic and complete.
+                Additional advanced features include order history visualization through database queries, dynamic error and confirmation pages invoked via PHP with HTTP status code handling, an informational section about space powered by external APIs and also used for design experimentation, a team presentation page, a user registration system with SQL database storage, and a dedicated page for travel ticket generation. The latter dynamically produces a ticket containing all purchase information, including the generation of a functional QR code.
+                From a personal standpoint, the project represented a particularly valuable learning experience, allowing me to concretely apply technologies widely used in professional environments. Driven by this interest, I independently developed both frontend and backend components of several core features of the site, including the login and registration system, cart and topbar management, the support page, order history, ticket generation, and dynamic error and confirmation pages. The exam concluded with a final grade of 29/30, achieved in both the theoretical and practical project components.
+            </p>
+        </div>
+    </div>
+
+    <div id="Swe" class="contenitore">
+        <div style="padding: 1rem">
+            <span style="font-weight: bold; color: #00f0ff">Phonebook Application</span>
+            <img src="../Assets/Rubrica.png" class="copertina_prog">
+            <p>
+                At the end of the Software Engineering course, as part of the final assessment, theoretical knowledge was applied through the group development of a phonebook software implemented in Java. The project began with the analysis of an intentionally rough initial document, from which system specifications had to be extracted and formalized, leading to a thorough requirements analysis and prioritization process, applying the core software engineering concepts covered during the course.
+                This phase was followed by system design, which included the creation of class diagrams, sequence diagrams, use case diagrams, and package diagrams, providing a structured and coherent view of the system architecture. The implementation phase then followed, with the application developed in Java using a graphical user interface based on JavaFX and SceneBuilder, while applying object-oriented programming principles. During this phase, Doxygen was also used for automatic code documentation generation.
+                In line with the complete software lifecycle, a testing phase was conducted using unit tests implemented with JUnit, in order to verify the correctness of the implemented functionalities and identify potential issues. The project concluded with the release of the final application as a JAR file and the writing of a technical report describing the adopted methodology. The entire development process was supported by Git and GitHub for version control, making the project, although apparently simple, a work of notable complexity and completeness, covering all fundamental stages of software development.
+                Additionally, upon my proposal and implementation, full support for the VCF standard was added, making the phonebook interoperable with the majority of contact management applications currently available. The project concluded with a final grade of 27/30.
+            </p>
+        </div>
+    </div>
+
+    <div id="Mp" class="contenitore">
+        <div style="padding: 1rem">
+            <span style="font-weight: bold; color: #ff4400">BiblioTech</span>
+            <img src="../Assets/BiblioTech.png" class="copertina_prog">
+            <p>
+                As an exam requirement for the Bachelor’s degree course in Mobile Programming, a group project was carried out to develop a digital library management application for smartphones, designed to be cross-platform. The application was developed using Flutter, with SQLite for data persistence related to the library and reading activities, and Xcode for simulation and testing on both physical devices and emulators.
+                The app features a dynamic main screen, characterized by sections dedicated to recent or recommended books, and allows quick addition of new titles and visualization of favorites. The book insertion system leverages the Google Books APIs to retrieve realistic and complete data, while still allowing manual insertion of books not present in the online catalog. A complete library view is also available, displaying all added books with text search functionality and category-based filtering.
+                Each book has a dedicated page where details can be viewed and edited, as well as personal reading notes added. Finally, the application includes a statistics section providing an overview of reading time, number of books read, most frequent genres, and other useful indicators. The project concluded with a final grade of 30/30.
+            </p>
+        </div>
+    </div>
+
+    <div id="Nms" class="contenitore">
+        <div style="padding: 1rem">
+            <span style="font-weight: bold; color: #7b00ff">Office Network Configuration</span>
+            <img src="../Assets/Nms.png" class="copertina_prog">
+            <p>
+                For the Bachelor’s degree course exam in Network Management and Security, a group project required the design and configuration from scratch of a complex network based on a provided scheme, including the complete configuration of all components, from firewall-equipped routers to servers within the infrastructure, ensuring strict compliance with security and access specifications. The project was developed using GNS3, a reference tool for advanced network simulation.
+                The network was structured across multiple security perimeters, including two distinct internal networks and a DMZ. The first internal perimeter hosted two generic hosts and a DHCP server, while the second perimeter contained an intrusion detection system and a database server. The DMZ was dedicated to an externally exposed web server. The configuration allowed all machines to access the Internet, except for the DHCP server, the IDS, and the database server, which were only permitted access to their respective software repositories for updates, enforced through highly restrictive firewall rules.
+                The web server was configured using Apache and hosted a WordPress installation, with data persistence on a remote database located in the dedicated internal perimeter. Access to the web server was allowed both from outside the network and from internal hosts exclusively via HTTPS. From the main internal perimeter, only one host was authorized to access the database via SSH, while the web server was allowed limited communication with the database restricted to the schema used by the CMS. The database was also protected against potential DoS attacks through appropriate security configurations.
+                The DHCP server was configured to distribute IP addresses within a predefined range to internal hosts, while the IDS, based on Snort, was used for traffic analysis within its dedicated perimeter using a standard configuration. Each machine was equipped with both a local firewall and network perimeter protections implemented via virtual machines running OPNSense, responsible for centralized management of filtering and security rules.
+                The project concluded with a final grade of 30/30 and represented a particularly formative experience, allowing me to apply the course’s theoretical concepts in depth and gain practical experience in the real configuration of key components of a medium-complexity network, with particular attention to security and segmentation aspects.
+            </p>
+        </div>
+    </div>
+
+    <div id="Minervas" class="contenitore">
+        <div style="padding: 1rem">
+            <span style="font-weight: bold; color: #00ff03">Congestion Control Algorithm Based on Machine Learning</span>
+            <img src="../Assets/Minervas.png" class="copertina_prog">
+            <p>
+                During my Bachelor’s degree curricular internship, I completed 200 hours at Minervas, a startup operating in the field of sustainable and intelligent mobility, working on a project related to V2X communications. In this context, I developed, in a simulated environment, a congestion control algorithm for communication between two Linux virtual machines connected via VPN. The algorithm is based on a k-nearest neighbors classifier trained using machine learning techniques on datasets obtained from network measurements conducted under different load conditions.
+                Based on the classification of the network state, the algorithm dynamically adapts the transmission frequency of periodic messages, referring to realistic V2X communication scenarios. Results showed a significant performance improvement in dynamic or congested network conditions, allowing the system to always maintain the highest transmission frequency compatible with current network conditions. This activity played a central role and was later further developed and expanded as the topic of my Bachelor’s thesis.
+                During the remaining internship hours, I also initiated the configuration of an urban traffic simulation using the Veins simulator, independently creating the urban scenario from OpenStreetMap data and using SUMO and OMNeT++ for vehicle traffic and communication network simulation, respectively. The simulation was configured for both low- and high-density traffic scenarios; however, due to time constraints, it was not possible to integrate this simulation environment with the previously developed congestion control algorithm.
+            </p>
+        </div>
+    </div>
+</div>

@@ -84,6 +84,7 @@ a{
     flex-direction: column;
     padding: 0%;
     gap: 2rem;
+    margin: 1rem;
 }
 
 .logo1{
@@ -110,7 +111,7 @@ a{
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
 }
 #projects{
-    display: none;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 3rem;
@@ -187,6 +188,39 @@ a{
     display: block !important;
 }
 
+
+* {
+    box-sizing: border-box;
+}
+
+#lingua{
+    position: fixed;
+    top: 3vh;
+    right: 3vw;
+}
+
+.loghino{
+    height: 1.7rem;
+}
+
+.loghino:hover{
+    transform: scale(1.3);
+    transition-duration: 0.33s;
+}
+
+#loghinis-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50vw;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-top: 3%;
+    gap: 1rem;
+}
+
 @media (max-width: 1400px){
     .logo1{
         width: 100%;
@@ -197,6 +231,41 @@ a{
         margin: 0;
         padding: 0.3rem;
     }
+    #sfondoanimato{
+        background-position: right center;
+    }
+    #boxinfo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 75vw;
+    }
+    .name{
+        color: white;
+        font-weight: bold;
+        font-size: 5rem;
+        text-shadow: 0 0 5px #d000ff, 0 0 10px #ff00ae;
+    }
+    .info{
+        display: block;
+        margin-top: 0.39rem;
+        font-weight: bold;
+        color: #00ffff;
+        clear: right;
+        font-size: 2rem;
+    }
+    .loghino{
+        height: 2.77rem;
+    }
+    .bandiera{
+        font-size: 3rem;
+    }
+    li{
+        font-weight: bold;
+        list-style: none;
+        font-size: 2rem;
+        margin: 0.3rem;
+    }
 }
 
 @media print {
@@ -204,8 +273,3 @@ a{
         display: none;
     }
 }
-
-* {
-    box-sizing: border-box;
-}
-
